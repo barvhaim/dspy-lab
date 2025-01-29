@@ -13,9 +13,9 @@ This project is a series of labs designed to help you get started with DSPy and 
 
 ## Installation 💻
 
-1. Clone the repository:
+1. Clone the repository (starter branch):
     ```sh
-    git clone git@github.com:barvhaim/dspy-lab.git
+    git clone --branch starter git@github.com:barvhaim/dspy-lab.git
     cd dspy-lab
     ```
 
