@@ -242,5 +242,6 @@ cython_debug/
 #.idea/
 
 *.pptx
+*.pdf
 labs/lab_7_sentiment_analysis_optimized.json
 labs/ragqa_arena_tech_500.json
