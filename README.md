@@ -15,8 +15,8 @@ This project is a series of labs designed to help you get started with DSPy and 
 
 1. Clone the repository:
     ```sh
-    git clone <repository-url>
-    cd <repository-name>
+    git clone git@github.com:barvhaim/dspy-lab.git
+    cd dspy-lab
     ```
 
 2. Create a virtual environment:
