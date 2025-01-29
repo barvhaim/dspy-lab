@@ -34,9 +34,9 @@ def lab_4():
 
     question = "3+3+5=?"
 
-    # Define a ChainOfThought module with the problem, add examples (demos) parameter to the module
-    ask = dspy.ChainOfThought("question -> answer")
-    response = ask(question=question, demos=_get_few_shot_examples())
+    # TODO: Define a ChainOfThought module with the problem, add examples (`demos`) argument to the module
+    ask =
+    response =
 
     # Log the completion
     logger.info(f"Reasoning: {response.reasoning}")

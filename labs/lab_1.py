@@ -27,12 +27,12 @@ def lab_1():
     # Classify the following sentence to determine if it's positive or negative
     sentence = "it's a charming and often affecting journey."
 
-    # Define Inline Signature for the task (True if positive, False if negative)
-    signature = "sentence -> sentiment: bool"
+    # TODO: Define Inline Signature for the task (True if positive, False if negative)
+    signature =
 
-    # Define a basic Predict (https://dspy.ai/deep-dive/modules/predict/) module with the signature
+    # TODO: Define a basic Predict (https://dspy.ai/deep-dive/modules/predict/) module with the signature
     classify = dspy.Predict(signature)
-    sentiment = classify(sentence=sentence).sentiment
+    sentiment =
 
     # Log the completion
     logger.info(f"Sentiment: {sentiment}")  # Sentiment: True

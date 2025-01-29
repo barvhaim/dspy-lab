@@ -11,12 +11,11 @@ logger = logging.getLogger(__name__)
 class RAG(dspy.Module):
     def __init__(self):
         super().__init__()
-        # Retrieve will use the user’s default retrieval settings
-        self.retrieve = dspy.Retrieve(k=3)
+        # TODO: Retrieve will use the user’s default retrieval settings, and retrieve the top 3 passages (`dspy.Retrieve`)
+        self.retrieve =
 
-        # ChainOfThought with signature that generates
-        # answers given retrieval context & question .
-        self.generate_answer = dspy.ChainOfThought("context, question -> answer")
+        # TODO: ChainOfThought with signature that generates answers given retrieval context & question.
+        self.generate_answer =
 
     def forward(self, question):
         context = self.retrieve(question).passages
@@ -43,9 +42,9 @@ def lab_5():
 
     question = "What's the name of the castle that David Gregory inherited?"
 
-    # Define a RAG module with the problem
+    # TODO: Define a RAG module with the problem
     rag = RAG()
-    response = rag(question=question)
+    response =
 
     # Log the completion
     logger.info(f"Reasoning: {response.reasoning}")

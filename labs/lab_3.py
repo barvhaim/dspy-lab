@@ -22,8 +22,8 @@ def lab_3():
 
     question = "Two dice are tossed. What is the probability that the sum equals two?"
 
-    # Define a ChainOfThought module with the problem
-    ask = dspy.ChainOfThought("question -> answer: float")
+    # TODO: Define a ChainOfThought module with the problem, answer should be a float
+    ask =
     response = ask(question=question)
 
     # Log the completion

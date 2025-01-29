@@ -24,20 +24,17 @@ def lab_2():
     # Configure DSPy to use the LM and set the max tokens to 1024
     dspy.settings.configure(lm=lm, max_tokens=1024)
 
-    # Define class Signature for Basic Q&A task
+    # TODO: Define class Signature for Basic Q&A task, with input question and output answer
     class BasicQA(dspy.Signature):
         """Answer the question with short factoid answer"""
-
-        question = dspy.InputField()
-        answer = dspy.OutputField(
-            desc="Often between 1 and 5 words", prefix="Question's Answer:"
-        )
+        question =
+        answer =
 
     question = "Who is the winner of the 2020 US presidential election?"
 
-    # Define a Predict module with the signature
-    ask = dspy.Predict(BasicQA)
-    answer = ask(question=question).answer
+    # TODO: Define a Predict module with the signature, and ask the question
+    ask =
+    answer =
 
     # Log the completion
     logger.info(f"Answer: {answer}")  # Answer: "Joe Biden"

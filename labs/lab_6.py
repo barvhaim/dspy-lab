@@ -34,11 +34,12 @@ def lab_6():
     )
     dspy.settings.configure(lm=lm, max_tokens=1024)
 
+    # Load the dataset - [{"question": "What is the capital of France?", "response": "Paris"}, ...]
     development_set = _load_dataset()
 
-    # Define a SemanticF1 metric and a ChainOfThought module for the question-answering task
-    metric = SemanticF1()
-    ask = dspy.ChainOfThought("question -> response")
+    # TODO: Define a SemanticF1 metric and a ChainOfThought module for the question-answering task
+    metric =
+    ask =
 
     # Define an evaluator on the dev set with your metric
     evaluator = dspy.Evaluate(

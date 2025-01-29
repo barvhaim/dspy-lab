@@ -26,7 +26,6 @@ def _load_dataset():
 
 class SentimentAnalysisSignature(dspy.Signature):
     """Predict the sentiment of the movie review"""
-
     text: str = dspy.InputField(desc="Movie review text")
     sentiment: int = dspy.OutputField(
         desc="generate sentiment as 1 if positive, 0 if negative"
@@ -58,20 +57,15 @@ def lab_7():
     # Load the dataset - Don't change this code
     train_set, dev_set = _load_dataset()
 
-    # Define SentimentAnalysisModule module
-    sentiment_analysis = SentimentAnalysisModule()
+    # TODO: Define SentimentAnalysisModule module
+    sentiment_analysis =
 
     # Define a metric to evaluate the module (Exact match)
     def _evaluate_sentiment(example, pred, trace=None) -> bool:
         return example["label"] == pred
 
-    # Define an evaluator on the dev set with your metric
-    evaluator = dspy.Evaluate(
-        devset=dev_set,
-        metric=_evaluate_sentiment,
-        num_threads=24,
-        display_progress=True,
-    )
+    # TODO: Define an evaluator on the dev set with your metric, 24 threads and display progress
+    evaluator =
 
     # Examine the performance of the module before optimization
     evaluator(sentiment_analysis)
@@ -79,8 +73,8 @@ def lab_7():
     # Define an optimizer to optimize the module
     optimizer = BootstrapFewShot(
         metric=_evaluate_sentiment,
-        max_bootstrapped_demos=4,  # How many demos teacher should create
-        max_labeled_demos=16,  # How many demos to pick from train set
+        max_bootstrapped_demos=4,  # TODO: Control How many demos teacher should create
+        max_labeled_demos=16,  # TODO: Control How many demos to pick from train set
         max_rounds=1,  # Number of iterations to attempt generating the required bootstrap examples
     )
 
