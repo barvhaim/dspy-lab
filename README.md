@@ -43,7 +43,7 @@ This project is a series of labs designed to help you get started with DSPy and 
 
 ## Usage 🚀
 
-- `master` branch contains the starter code for the labs. Each lab is implemented in a separate Python file in the `labs` directory.
+- `starter` branch contains the starter code for the labs. Each lab is implemented in a separate Python file in the `labs` directory.
 - Fill in the missing code in each lab to complete the tasks.
 - `solution` branch contains the complete code for all the labs.
 
