@@ -54,9 +54,9 @@ def lab_8():
     # Examine the performance of the module before optimization
     evaluator(cot)
 
-    cot.save("lab_8_cot.json")
+    cot.save("lab_8_cot.json")  # TODO: Examine the file to see the module
 
-    # Define an optimizer to optimize the module
+    # Define an MIPROv2 optimizer with GSM8K metric and light optimization
     optimizer = MIPROv2(
         metric=gsm8k_metric,
         auto="light",  # Can choose between light, medium, and heavy optimization runs
@@ -70,13 +70,13 @@ def lab_8():
         max_labeled_demos=5,
     )
 
-    # Save the optimized module to disk, inspect the file to see the optimized module
+    # TODO: Save the optimized module to disk, inspect the file to see the optimized module and compare it to the original
     optimized_cot.save("lab_8_cot_optimized.json")
 
     # Examine the performance of the module after optimization
     evaluator(optimized_cot)
 
-    # Bonus: Try to improve the performance of the module by using a different model,
+    # TODO: Try to improve the performance of the module by using a different model,
     # or other teacher model. You can also try to change the optimizer parameters.
 
 
