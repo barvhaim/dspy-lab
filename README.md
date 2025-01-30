@@ -63,4 +63,5 @@ python labs/lab_0.py
 ### Lab 5: Modules - RAG
 ### Lab 6: Evaluation and Metrics
 ### Lab 7: Optimization and Tuning (BootstrapFewShot)
+### Lab 8: Optimization and Tuning (MIPRO)
 
